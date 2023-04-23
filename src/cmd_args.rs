@@ -7,9 +7,9 @@ pub(crate) struct Settings {
 }
 
 static HELP_TEXT: &str = "
-Convert the case of letters in text to become alternating.
+Convert text to alternating case.
 
-This is frequently used to \"mock-type\" online. Runs as both command-line tool, and with GUI.
+This is frequently used to \"MoCk-TyPe\" online. Runs as both command-line tool, and with GUI.
 
 USAGE:
     altcase [options] [input text]

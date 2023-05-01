@@ -1,0 +1,21 @@
+<svg height="12" width="16" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css" id="current-color-scheme">
+    .icon {
+      color: #888888;
+      fill: currentColor;
+      stroke: none;
+    }
+  </style>
+  <path class="icon"
+     d="
+       M 2 5
+       h 7
+       v -3
+       l 4 4
+       l -4 4
+       v -3
+       h -7
+       z
+       "
+     />
+</svg>

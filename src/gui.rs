@@ -30,6 +30,10 @@ fn create_window(app: &Application) {
         .title("AltCase")
         .build();
 
+    if let Ok(app_icon) = Pixbuf::from_file("img/altcase.svg") {
+        window.set_icon(Some(&app_icon));
+    }
+
     // Simple mode toggle
     let simple_mode_label = gtk::Label::builder()
         .label("Simple Mode")

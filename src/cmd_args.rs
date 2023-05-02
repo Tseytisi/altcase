@@ -18,7 +18,7 @@ OPTIONS:
     --help          Prints this help page and exits
     --version       Prints the program version and exits
     --gui           Start the program in GUI mode
-    --simple        Set the conversion mode to 'simple', which does pay extra attention to 'i' and
+    --simple        Set the conversion mode to 'simple', which does not pay extra attention to 'i' and
                     'L', possibly making the output more difficult to read.
 
 EXAMPLE USES:

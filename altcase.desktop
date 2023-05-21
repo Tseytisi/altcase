@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=AltCase
+Comment=Convert text to alternating case
+Exec=/usr/bin/altcase --gui
+Icon=/usr/share/altcase/img/altcase.svg
+Categories=Utility

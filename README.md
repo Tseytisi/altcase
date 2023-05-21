@@ -17,11 +17,10 @@ git clone https://github.com/Tseytisi/altcase
 ```sh
 rustup default stable
 ```
-3. Inside the cloned repository, in the same folder where the `Cargo.toml` file is located, build the application
+3. Run the install script. You can edit the parameters at the top of the script to alter the install location.
 ```sh
-cargo build --release
+bash install.sh
 ```
-4. The compiled binary should now be located inside the folder at `target/release/altcase`
 
 ### How to run
 To get a help and usage screen from the application, type
@@ -38,6 +37,6 @@ altcase --gui
 
 ### Planned features
 - Allow input through pipe
-- Split input on newlines so each line gets the best mapping (in normal conversion mode)
+- Split input on newlines (or words) so each line gets the best mapping (in normal conversion mode)
 - Start with capital or non-capital letter in simple mode depending on the first character
 - GUI: Copied-to-clipboard notifier

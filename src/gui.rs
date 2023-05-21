@@ -30,7 +30,9 @@ fn create_window(app: &Application) {
         .title("AltCase")
         .build();
 
-    if let Ok(app_icon) = Pixbuf::from_file("img/altcase.svg") {
+    let assets_dir = String::from(option_env!("ALTCASE_ASSETS_DIR").unwrap_or(""));
+
+    if let Ok(app_icon) = Pixbuf::from_file(format!("{}img/altcase.svg", &assets_dir)) {
         window.set_icon(Some(&app_icon));
     }
 
@@ -95,7 +97,7 @@ fn create_window(app: &Application) {
     let convert_button = gtk::Button::builder()
         .build();
     convert_button_box.add(&convert_button);
-    if let Ok(image) = Pixbuf::from_file("img/arrow.png") {
+    if let Ok(image) = Pixbuf::from_file(format!("{}img/arrow.png", &assets_dir)) {
         let convert_arrow = gtk::Image::from_pixbuf(Some(&image));
         convert_button.set_image(Some(&convert_arrow));
         convert_button.set_always_show_image(true);
